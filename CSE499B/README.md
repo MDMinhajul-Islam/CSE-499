@@ -131,7 +131,7 @@ Generate the inpainted image
 ```
 
 🎯 Hybrid Masking Strategy
-```text
+
 
 To improve robustness, the model is trained using multiple mask types:
 
@@ -185,6 +185,7 @@ using the same input image and mask.
 
 
 🛠️ Technologies Used
+```text
 Frameworks & Libraries
 PyTorch
 HuggingFace Diffusers
@@ -197,7 +198,9 @@ Compute Environment
 Kaggle GPU
 Google Colab
 Local deployment environment (Python + Gradio)
+```
 📦 Dataset
+```text
 CelebA Dataset
 
 Used for training and evaluation.
@@ -208,7 +211,7 @@ Validation: 500
 Test: 500
 Dataset link
 https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
-
+```
 📁 Project Structure
 ```text
 .
