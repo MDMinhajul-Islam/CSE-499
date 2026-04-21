@@ -276,8 +276,16 @@ Increase resolution to 512×512
 Investigate text-conditioned student models
 Optimize deployment for real-time usage
 ```
-👨‍🎓 Author
 
+🙏 Acknowledgements
+```text
+Stable Diffusion 2 Inpainting
+HuggingFace Diffusers
+CelebA Dataset
+PyTorch ecosystem
+```
+👨‍🎓 Author
+```text
 Md. Minhajul Islam
 BSc in Computer Science and Engineering
 North South University
@@ -289,23 +297,16 @@ North South University
 Kazi Tazrian Mon
 BSc in Computer Science and Engineering
 North South University
+```
 
-🙏 Acknowledgements
-Stable Diffusion 2 Inpainting
-HuggingFace Diffusers
-CelebA Dataset
-PyTorch ecosystem
-North South University
-
-
-
-
-                                                            
+                                                           
 Supervisor:
+```text
 Dr. Mohammad Shifat-E-Rabbi
 Assistant Professor,
 Department of Electrical & Computer Engineering
 North South University
+```
                                               
   
 
