@@ -174,12 +174,6 @@ Student A02 is much smaller and faster than SD2, while still maintaining a usabl
 
 The results show that Student A02 preserves global facial structure reasonably well, though masked-region quality is still less sharp than the SD2 baseline.
 
-🎬 Demo
-
-<p align="center"> <img src="assets/demo.gif" alt="Demo GIF" width="80%"> </p>
-
-An interactive Gradio app is included for comparing:
-
 
 
 🛠️ Technologies Used
