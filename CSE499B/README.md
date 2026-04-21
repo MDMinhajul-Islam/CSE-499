@@ -88,7 +88,7 @@ Compared to the SD2 UNet backbone, Student A02 reduces parameters by approximate
 
 🧩 Method Overview
 <p align="center">
-  <img src="assets/system_diagram.png" alt="System Diagram" width="85%">
+  <img src="assets/system_diagram.jpg" alt="System Diagram" width="85%">
 </p>
 Training pipeline
 Input image and mask are prepared
