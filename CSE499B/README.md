@@ -104,6 +104,7 @@ Compared to the SD2 UNet backbone, Student A02 reduces parameters by approximate
   <img src="Final%20project/cse499b_inpainting_deploy/assets/system_diagram.jpg" alt="System Diagram" width="85%">
 </p>
 Training pipeline
+
 ```text
 Input image and mask are prepared
 Original image and masked image are encoded using the SD2 VAE
@@ -129,6 +130,7 @@ Generate the inpainted image
 
 🎯 Hybrid Masking Strategy
 
+```text
 
 To improve robustness, the model is trained using multiple mask types:
 
