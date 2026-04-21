@@ -82,6 +82,7 @@ So the full input becomes:
 
 
 🏗️ Model Architecture
+```text
 Student A02
 Lightweight latent diffusion U-Net
 Input channels: 9
@@ -100,12 +101,13 @@ Parameter reduction
 
 Compared to the SD2 UNet backbone, Student A02 reduces parameters by approximately 99.2%.
 
-
+```
 🧩 Method Overview
 <p align="center">
   <img src="Final%20project/cse499b_inpainting_deploy/assets/system_diagram.jpg" alt="System Diagram" width="85%">
 </p>
 Training pipeline
+```text
 Input image and mask are prepared
 Original image and masked image are encoded using the SD2 VAE
 Latents are obtained:
@@ -135,6 +137,7 @@ Center masks
 Blob masks
 
 This hybrid masking setup helps the model learn under both structured and irregular missing-region conditions.
+```
 
 
 📊 Final Evaluation Results
