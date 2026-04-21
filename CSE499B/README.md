@@ -237,8 +237,9 @@ https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
 ```
 
 ▶️ How to Run the Project
-```text
+
 1. Clone the repository
+```text
 git clone https://github.com/MDMinhajul-Islam/CSE-499.git
 cd CSE-499/CSE499B/cse499b_inpainting_deploy
 ```
