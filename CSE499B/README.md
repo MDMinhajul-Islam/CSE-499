@@ -87,7 +87,9 @@ Compared to the SD2 UNet backbone, Student A02 reduces parameters by approximate
 
 
 🧩 Method Overview
-<p align="center"> <img src="assets/system_diagram.png" alt="System Diagram" width="85%"> </p>
+<p align="center">
+  <img src="assets/system_diagram.png" alt="System Diagram" width="85%">
+</p>
 Training pipeline
 Input image and mask are prepared
 Original image and masked image are encoded using the SD2 VAE
