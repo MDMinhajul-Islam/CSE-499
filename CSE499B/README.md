@@ -174,6 +174,87 @@ Student A02 is much smaller and faster than SD2, while still maintaining a usabl
 
 The results show that Student A02 preserves global facial structure reasonably well, though masked-region quality is still less sharp than the SD2 baseline.
 
+## 🔍 Findings & Analysis
+
+This project explored multiple student model variants to understand the trade-off between model efficiency and inpainting quality under a teacher-student diffusion framework.
+
+### What we applied
+
+We designed and evaluated several lightweight latent diffusion models:
+
+- **Student A (Baseline)**  
+  A simple latent diffusion U-Net trained without teacher guidance.
+
+- **Student A02 (Improved Model)**  
+  A balanced lightweight model trained with:
+  - diffusion loss  
+  - teacher distillation from Stable Diffusion 2  
+
+- **Student C Variants (v1, v2, v3)**  
+  More complex models incorporating:
+  - additional perceptual losses  
+  - stronger distillation objectives  
+  - modified training strategies  
+
+---
+
+### What worked well
+
+- **Student A02 performed best overall**
+  - Achieved a good balance between quality and efficiency
+  - Stable training behavior
+  - Improved perceptual quality compared to baseline
+
+- **Teacher-student distillation was effective**
+  - Helped the student model learn better structure
+  - Improved SSIM and LPIPS compared to non-distilled models
+
+---
+
+### What failed and why
+
+- **Student A (no teacher)**
+  - Very poor FID (~260)
+  - Weak reconstruction in masked regions  
+  - Reason: no high-level guidance → model learns slowly and poorly
+
+- **Student C variants (v1, v2, v3)**
+  - Performance degraded instead of improving
+  - Training became unstable
+  - Outputs were often worse than A02
+
+**Main reasons for failure:**
+
+1. **Overly complex loss functions**
+   - Too many competing objectives
+   - Hard for a small model (~6–7M params) to optimize
+
+2. **Capacity limitation of the student**
+   - Lightweight model cannot handle heavy supervision
+   - Leads to underfitting or unstable learning
+
+3. **Mismatch between teacher and student**
+   - Teacher (SD2) is very large (~1.29B params)
+   - Student is too small to fully replicate teacher behavior
+
+---
+
+### Key insights
+
+- Simpler and well-balanced models perform better than overly complex ones
+- Teacher guidance is helpful, but must be applied carefully
+- Lightweight diffusion models require **efficient and stable supervision**, not aggressive loss design
+
+---
+
+### Final outcome
+
+- Best model: **Student A02**
+- Parameters: **~6.70M**
+- FID: **~46**
+- Inference time: **~0.4 sec/image**
+
+This demonstrates that it is possible to build a significantly smaller model while maintaining reasonable inpainting performance, making it more suitable for real-world deployment.
 
 
 🛠️ Technologies Used
