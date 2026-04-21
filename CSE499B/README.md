@@ -127,7 +127,11 @@ Start from random latent noise
 Perform reverse diffusion using Student A02
 Decode final latent using VAE decoder
 Generate the inpainted image
+
+```
+```text
 🎯 Hybrid Masking Strategy
+```text
 
 To improve robustness, the model is trained using multiple mask types:
 
@@ -162,7 +166,7 @@ Student A02 (100-step evaluation on CelebA fixed subset)
 Summary
 
 Student A02 is much smaller and faster than SD2, while still maintaining a usable level of inpainting quality.
-
+```text
 🖼️ Visual Results
 <p align="center"> <img src="assets/results_grid.png" alt="Results Grid" width="90%"> </p>
 
@@ -177,6 +181,7 @@ Student A02
 Stable Diffusion 2 baseline
 
 using the same input image and mask.
+```
 
 
 🛠️ Technologies Used
