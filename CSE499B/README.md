@@ -2,7 +2,7 @@
 <h3 align="center">A Teacher-Student Latent Diffusion Framework Based on Stable Diffusion 2</h3>
 
 <p align="center">
-  <img src="CSE499B/Final project/cse499b_inpainting_deploy/assets/system_diagram.jpg" alt="System Diagram" width="85%">
+  <img src="Final%20project/cse499b_inpainting_deploy/assets/system_diagram.jpg" alt="System Diagram" width="85%">
 </p>
 
 <p align="center">
