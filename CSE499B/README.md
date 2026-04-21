@@ -129,7 +129,7 @@ Decode final latent using VAE decoder
 Generate the inpainted image
 
 ```
-```text
+
 🎯 Hybrid Masking Strategy
 ```text
 
