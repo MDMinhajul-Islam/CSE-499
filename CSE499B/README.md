@@ -1,65 +1,80 @@
-<p align="center">
-  
-</p>
-
 <h1 align="center">Design and Analysis of Lightweight Diffusion Models for Efficient Image Inpainting</h1>
 <h3 align="center">A Teacher-Student Latent Diffusion Framework Based on Stable Diffusion 2</h3>
 
 <p align="center">
-  <strong>Author:</strong> Md. Minhajul Islam  
-  <br>
-  <strong>Course:</strong> CSE499B – Capstone Project  
-  <br>
-  <strong>Institution:</strong> North South University  
-  <br>
-  <strong>Supervisor:</strong> M. Shifat-E-Rabbi
+  <img src="assets/system_diagram.jpg" alt="System Diagram" width="85%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Task-Image%20Inpainting-blue" />
+  <img src="https://img.shields.io/badge/Model-Lightweight%20Latent%20Diffusion-green" />
+  <img src="https://img.shields.io/badge/Teacher-Stable%20Diffusion%202-orange" />
+  <img src="https://img.shields.io/badge/Framework-PyTorch-red" />
+  <img src="https://img.shields.io/badge/UI-Gradio-purple" />
+</p>
+
+<p align="center">
+  <strong>Author:</strong> Md. Minhajul Islam<br>
+  <strong>Course:</strong> CSE499B – Capstone Project<br>
+  <strong>Institution:</strong> North South University<br>
+  <strong>Supervisor:</strong> Dr. Mohammad Shifat-E-Rabbi
 </p>
 
 ---
 
-## 📌 Project Overview
+## Overview
 
-This project explores how to build a **lightweight diffusion-based image inpainting model** that can reconstruct missing image regions efficiently while significantly reducing computational cost.
+This project presents a lightweight diffusion-based image inpainting system designed to reconstruct missing image regions while reducing computational cost. Large pretrained inpainting systems such as Stable Diffusion 2 produce strong visual quality, but they are expensive to run and difficult to deploy in low-resource environments.
 
-Large pretrained models such as **Stable Diffusion 2 Inpainting** generate strong visual results but are computationally expensive and difficult to deploy in low-resource settings. To address this limitation, this work proposes a **teacher-student latent diffusion framework**, where a compact student model learns from a frozen Stable Diffusion 2 teacher.
-
-The main goal is to achieve a strong **quality-efficiency tradeoff** by reducing model complexity while still producing reasonable inpainting quality.
+To address this, this work proposes a teacher-student latent diffusion framework where a compact student model learns from a frozen Stable Diffusion 2 teacher. The goal is to achieve a strong balance between image quality, speed, and model efficiency.
 
 ---
 
-## 🚀 Core Idea
+## Key Highlights
 
-- Use **Stable Diffusion 2 Inpainting** as a strong frozen teacher
-- Build a **lightweight latent diffusion student**
-- Train the student using:
-  - diffusion loss
-  - teacher distillation loss
-- Evaluate the tradeoff between:
-  - visual quality
-  - parameter count
-  - inference speed
-
----
-
-## 🧠 Proposed Student Model (A02)
-
-Our final lightweight model, **Student A02**, is a mask-conditioned latent diffusion model.
-
-### Key characteristics:
-- Operates in **latent space**
-- Uses **masked image conditioning**
-- Uses **hybrid masking**
+- Lightweight student model with only **6.70M parameters**
+- Built in **latent space** for efficient computation
 - Trained with **teacher-student distillation**
-- Designed for **fast and efficient inference**
+- Uses **hybrid masking strategy** for stronger robustness
+- Much faster than the full Stable Diffusion 2 pipeline
+- Includes an interactive **Gradio app** for demonstration
 
-### Input to the student model:
-The student receives a 9-channel concatenated latent input:
+---
 
-- `z_t` → noisy latent
-- `z_masked` → masked-image latent
-- `m_latent` → latent-space binary mask
+## Core Idea
 
-So the full student input is:
+The project uses **Stable Diffusion 2 Inpainting** as a strong frozen teacher and trains a compact student model to predict diffusion noise in latent space.
+
+The student is optimized using:
+
+- diffusion loss
+- teacher distillation loss
+
+This allows the lightweight model to learn from both the reconstruction objective and the guidance of the teacher network.
+
+---
+
+## Student Model: A02
+
+**Student A02** is the final lightweight model developed in this work.
+
+### Main characteristics
+
+- Operates in latent space
+- Uses masked-image conditioning
+- Uses hybrid mask generation
+- Trained with teacher-student distillation
+- Designed for fast inference and smaller deployment cost
+
+### Student input formulation
+
+The student receives a 9-channel latent input composed of:
+
+- `z_t` = noisy latent
+- `z_masked` = masked-image latent
+- `m_latent` = latent-space binary mask
+
+So the full input becomes:
 
 ```text
 [z_t, z_masked, m_latent]
@@ -87,10 +102,7 @@ Compared to the SD2 UNet backbone, Student A02 reduces parameters by approximate
 
 
 🧩 Method Overview
-
-<p align="center">
-  <img src="assets/system_diagram.jpg" alt="System Diagram" width="85%">
-</p>
+<p align="center"> <img src="assets/system_diagram.jpg" alt="System Diagram" width="85%"> </p>
 Training pipeline
 Input image and mask are prepared
 Original image and masked image are encoded using the SD2 VAE
