@@ -165,25 +165,21 @@ Student A02 (100-step evaluation on CelebA fixed subset)
 Summary
 
 Student A02 is much smaller and faster than SD2, while still maintaining a usable level of inpainting quality.
-```text
+
 🖼️ Visual Results
-```text
+
 <p align="center"> <img src="Final%20project/cse499b_inpainting_deploy/assets/compare_20260419_003405.png" alt="Results Grid" width="90%"> </p>
 <p align="center"> <img src="Final%20project/cse499b_inpainting_deploy/assets/compare_20260421_173624.png" alt="Results Grid" width="90%"> </p>
 <p align="center"> <img src="Final%20project/cse499b_inpainting_deploy/assets/compare_20260421_173334.png" alt="Results Grid" width="90%"> </p>
 
 The results show that Student A02 preserves global facial structure reasonably well, though masked-region quality is still less sharp than the SD2 baseline.
-```
+
 🎬 Demo
+
 <p align="center"> <img src="assets/demo.gif" alt="Demo GIF" width="80%"> </p>
 
 An interactive Gradio app is included for comparing:
 
-Student A02
-Stable Diffusion 2 baseline
-
-using the same input image and mask.
-```
 
 
 🛠️ Technologies Used
