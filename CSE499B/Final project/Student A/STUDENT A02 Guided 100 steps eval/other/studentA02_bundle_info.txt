@@ -1,0 +1,10 @@
+Student A02 Deployment Bundle
+Project: Lightweight Diffusion Inpainting
+
+Best checkpoint: studentA02_best.pt
+Latest checkpoint: studentA02_latest.pt
+Epochs: 20
+Image size: 256
+Base channels: 64
+Teacher loss weight: 0.1
+Sampling steps: 100

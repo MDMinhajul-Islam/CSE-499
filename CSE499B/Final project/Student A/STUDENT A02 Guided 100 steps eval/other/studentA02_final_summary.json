@@ -1,0 +1,11 @@
+{
+  "experiment": "Student A02 with SD2 teacher distillation",
+  "FID": 46.94912338256836,
+  "PSNR_masked": 21.22296338381309,
+  "SSIM_masked": 0.8714379668235779,
+  "LPIPS_masked": 0.08842972988449037,
+  "Avg_Inference_Time_sec": 0.6370953459739686,
+  "Parameter_Count": 6697540,
+  "Sampling_Steps": 100,
+  "Num_Test_Samples": 500
+}

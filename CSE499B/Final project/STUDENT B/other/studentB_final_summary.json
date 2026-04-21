@@ -1,0 +1,11 @@
+{
+  "experiment": "Student B with balanced multi-loss distillation",
+  "FID": 62.86321258544922,
+  "PSNR_masked": 18.198613640026885,
+  "SSIM_masked": 0.8434545993804932,
+  "LPIPS_masked": 0.11771527368575335,
+  "Avg_Inference_Time_sec": 0.32603730154037475,
+  "Parameter_Count": 10298708,
+  "Sampling_Steps": 50,
+  "Num_Test_Samples": 500
+}

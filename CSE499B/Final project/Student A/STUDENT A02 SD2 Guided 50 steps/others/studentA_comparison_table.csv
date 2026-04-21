@@ -1,0 +1,4 @@
+Model,FID,PSNR_masked,SSIM_masked,LPIPS_masked,Inference_sec,Params,Steps
+Student A01 (no teacher distillation),260.215,18.287,0.844,0.156,0.427,5871492.0,50.0
+Student A02 (teacher distillation),49.82220458984375,18.537870947179968,0.8430781364440918,0.11506782172992826,0.3230763897895813,6697540.0,50.0
+Teacher SD2 Reference,22.0,26.85,0.94,0.04,5.8,,

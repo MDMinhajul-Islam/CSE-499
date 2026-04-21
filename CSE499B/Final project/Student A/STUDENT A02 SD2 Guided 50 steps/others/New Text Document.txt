@@ -1,0 +1,70 @@
+StudentA02 Teacher Distilation version 
+
+
+Saved: /kaggle/working/studentA02_celeba_inpainting/results/studentA02_config_summary.json
+{
+  "project": "CSE499B - Lightweight Diffusion Models for Image Inpainting",
+  "experiment": "Student A02 with SD2 teacher distillation",
+  "image_size": 256,
+  "epochs": 15,
+  "batch_size": 1,
+  "lr": 0.0001,
+  "teacher_loss_weight": 0.1,
+  "weight_mask": 4.0,
+  "num_sample_steps": 50,
+  "parameter_count": 6697540
+
+}
+
+
+{
+  "PSNR_masked_mean": 18.537870947179968,
+  "SSIM_masked_mean": 0.8430781364440918,
+  "LPIPS_masked_mean": 0.11506782172992826,
+  "Inference_time_mean_sec": 0.3230763897895813,
+  "Num_samples": 500
+}
+
+
+{
+  "experiment": "Student A02 with SD2 teacher distillation",
+  "FID": 49.82220458984375,
+  "PSNR_masked": 18.537870947179968,
+  "SSIM_masked": 0.8430781364440918,
+  "LPIPS_masked": 0.11506782172992826,
+  "Avg_Inference_Time_sec": 0.3230763897895813,
+  "Parameter_Count": 6697540,
+  "Sampling_Steps": 50,
+  "Num_Test_Samples": 500
+}
+Saved: /kaggle/working/studentA02_celeba_inpainting/results/studentA02_final_summary.json
+-----------------------------------------------------------------------------------------------
+
+Model         FID  PSNR_masked  \
+0  Student A01 (no teacher distillation)  260.215000    18.287000   
+1     Student A02 (teacher distillation)   49.822205    18.537871   
+2                  Teacher SD2 Reference   22.000000    26.850000   
+
+   SSIM_masked  LPIPS_masked  Inference_sec     Params  Steps  
+0     0.844000      0.156000       0.427000  5871492.0   50.0  
+1     0.843078      0.115068       0.323076  6697540.0   50.0  
+2     0.940000      0.040000       5.800000        NaN    NaN  
+Saved: /kaggle/working/studentA02_celeba_inpainting/results/studentA_comparison_table.csv
+
+
+   epoch  train_total  train_diff  train_teacher  val_total  val_diff  \
+0      1     0.249148    0.235862       0.132860   0.239995  0.226899   
+1      2     0.238234    0.225290       0.129438   0.226973  0.214484   
+2      3     0.225955    0.213416       0.125397   0.253591  0.240189   
+3      4     0.230935    0.218167       0.127684   0.245941  0.232822   
+4      5     0.233071    0.220205       0.128661   0.238425  0.224826   
+
+   val_teacher  
+0     0.130959  
+1     0.124886  
+2     0.134021  
+3     0.131193  
+4     0.135992  
+
+
+The experimental results demonstrate that the improved teacher-distilled model (Student A02) significantly enhances the overall quality-efficiency tradeoff compared to the baseline lightweight model (Student A01). Most notably, the FID score improves substantially from 260.21 to 49.82, indicating a large gain in global distribution alignment and perceptual realism. At the same time, masked-region reconstruction quality is preserved, with PSNR slightly increasing (18.28 → 18.53) and SSIM remaining nearly unchanged (0.844 → 0.843), suggesting that structural consistency is maintained despite the stronger generative guidance. Furthermore, LPIPS decreases from 0.156 to 0.115, reflecting improved perceptual similarity in reconstructed regions. Importantly, these improvements are achieved while maintaining high efficiency, as the model remains lightweight (~6.7M parameters) and even achieves faster inference (0.32s vs 0.43s per image), which is significantly more efficient than the SD2 teacher model (~5.8s per image). Although a gap still exists compared to the teacher in absolute quality, the results confirm that properly balanced teacher distillation can effectively guide a compact diffusion model toward competitive visual performance without sacrificing efficiency, making Student A02 a strong candidate for further lightweight model optimization.

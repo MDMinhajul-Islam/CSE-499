@@ -1,0 +1,26 @@
+{
+  "image_size": 256,
+  "batch_size": 1,
+  "num_workers": 0,
+  "epochs": 20,
+  "lr": 0.0001,
+  "num_train_timesteps": 1000,
+  "num_sample_steps": 100,
+  "teacher_loss_weight": 0.1,
+  "train_csv": "/kaggle/input/datasets/alice02026/celeba-fixed-dataset/celeba_fixed_dataset/train_3000.csv",
+  "val_csv": "/kaggle/input/datasets/alice02026/celeba-fixed-dataset/celeba_fixed_dataset/val_500.csv",
+  "test_csv": "/kaggle/input/datasets/alice02026/celeba-fixed-dataset/celeba_fixed_dataset/test_500.csv",
+  "image_root": "/kaggle/input/datasets/jessicali9530/celeba-dataset/img_align_celeba/img_align_celeba",
+  "student": {
+    "in_channels": 9,
+    "out_channels": 4,
+    "base_channels": 64,
+    "weight_mask": 4.0
+  },
+  "masking": {
+    "rectangle_prob": 0.25,
+    "brush_prob": 0.25,
+    "center_prob": 0.25,
+    "blob_prob": 0.25
+  }
+}

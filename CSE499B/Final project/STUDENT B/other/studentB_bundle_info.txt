@@ -1,0 +1,11 @@
+Student B Deployment Bundle
+Project: Lightweight Diffusion Inpainting
+
+Best checkpoint: studentB_best.pt
+Latest checkpoint: studentB_latest.pt
+Epochs: 15
+Image size: 256
+Base channels: 80
+Teacher loss weight: 0.3
+LPIPS loss weight: 0.1
+Sampling steps: 50

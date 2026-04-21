@@ -1,0 +1,13 @@
+*.zip
+
+__pycache__/
+
+.venv/
+
+*.pt
+
+*.pth
+
+*.ckpt
+
+*.bin

@@ -1,0 +1,32 @@
+# Core Deep Learning Framework
+torch
+torchvision
+torchaudio
+
+# HuggingFace Diffusion Models (Stable Diffusion + RePaint)
+diffusers
+transformers
+accelerate
+safetensors
+huggingface-hub
+
+# Image Processing
+Pillow
+scikit-image
+opencv-python
+
+# Utilities & Visualization
+numpy
+matplotlib
+tqdm
+einops
+
+# Notebook Support (optional, but useful if running locally)
+jupyter
+ipykernel
+
+# Model Saving / Loading
+protobuf
+
+# Needed for Stable Diffusion schedulers and pipelines
+scipy
