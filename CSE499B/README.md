@@ -202,6 +202,7 @@ Dataset link
 https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
 
 📁 Project Structure
+```text
 .
 ├── models/
 │   ├── model_registry.py
@@ -223,24 +224,30 @@ https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
 ├── app.py
 ├── requirements.txt
 └── README.md
+```
 
 ▶️ How to Run the Project
+```text
 1. Clone the repository
 git clone https://github.com/MDMinhajul-Islam/CSE-499.git
 cd CSE-499/CSE499B/cse499b_inpainting_deploy
-
+```
 2. Create and activate virtual environment
+ ```text
 python -m venv .venv
 .venv\Scripts\activate
+```
 
-3. Install dependencies
+4. Install dependencies
+ ```text
 pip install -r requirements.txt
-
-4. Run the app
+```
+5. Run the app
+```text
 python app.py
 
 Then open:http://127.0.0.1:7860
-
+```
 🧪 Current Limitations
 Student A02 still produces blurred masked-region outputs in difficult facial areas
 Visual quality remains below the SD2 baseline
