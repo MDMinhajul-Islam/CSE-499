@@ -76,7 +76,7 @@ The student receives a 9-channel latent input composed of:
 
 So the full input becomes:
 
-```text
+
 [z_t, z_masked, m_latent]
 
 
