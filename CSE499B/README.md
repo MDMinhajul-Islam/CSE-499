@@ -260,19 +260,22 @@ python app.py
 Then open:http://127.0.0.1:7860
 ```
 🧪 Current Limitations
+```text
 Student A02 still produces blurred masked-region outputs in difficult facial areas
 Visual quality remains below the SD2 baseline
 The current student model still depends on latent-space preprocessing and diffusion scheduling
 More work is needed to improve local realism and boundary blending
-
+```
 
 🔮 Future Work
+```text
 Improve masked-region visual fidelity
 Explore stronger mask-aware supervision
 Add boundary-aware distillation
 Increase resolution to 512×512
 Investigate text-conditioned student models
 Optimize deployment for real-time usage
+```
 👨‍🎓 Author
 
 Md. Minhajul Islam
