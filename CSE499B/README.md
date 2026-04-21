@@ -1,9 +1,6 @@
 <h1 align="center">Design and Analysis of Lightweight Diffusion Models for Efficient Image Inpainting</h1>
 <h3 align="center">A Teacher-Student Latent Diffusion Framework Based on Stable Diffusion 2</h3>
 
-<p align="center">
-  <img src="Final%20project/cse499b_inpainting_deploy/assets/system_diagram.jpg" alt="System Diagram" width="85%">
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Task-Image%20Inpainting-blue" />
