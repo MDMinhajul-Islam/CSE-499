@@ -1,0 +1,13 @@
+1.baseline-recreating-for-align-with-a02 complete eval(parameter counted).ipynb
+
+https://drive.google.com/file/d/1g9QQ2-_Y0vLbmDD4zYDqPcjmuY0G_NUp/view?usp=sharing
+
+Inference Video:
+1.
+
+ https://drive.google.com/file/d/1MRYpIuGiLNqX7J5nioo2iL45pLkxknLC/view?usp=drivesdk
+
+2.
+
+fbrpc://nativethirdparty/f?app_id=256002347743983&app_name=Facebook+Messenger+for+Android&tap_behavior=web_always&target_url=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1nGGJDlFTxvkIEMpkConnXzbkLyu3nFqt%2Fview%3Fusp%3Ddrivesdk%26fbclid%3DIwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNDM3NjI2MzE2OTczNzg4AAEeUgx5cayxAu_8UTvgr3q8yZBCBzMV4Pq8ynhnugLnwvEl4sGdcKjlQL521Kg_aem_vNskMwRbDTmJsPOOmLHKnA&app_sites=%5B%22fb256002347743983%3A%5C%2F%5C%2Fauthorize%23target_url%3Dhttps%5Cu00253A%5Cu00252F%5Cu00252Fdrive.google.com%5Cu00252Ffile%5Cu00252Fd%5Cu00252F1nGGJDlFTxvkIEMpkConnXzbkLyu3nFqt%5Cu00252Fview%5Cu00253Fusp%5Cu00253Ddrivesdk%5Cu002526fbclid%5Cu00253DIwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNDM3NjI2MzE2OTczNzg4AAEeUgx5cayxAu_8UTvgr3q8yZBCBzMV4Pq8ynhnugLnwvEl4sGdcKjlQL521Kg_aem_vNskMwRbDTmJsPOOmLHKnA%22%5D&has_app_link=0
+
