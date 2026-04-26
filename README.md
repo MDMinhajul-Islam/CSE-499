@@ -28,6 +28,8 @@ CSE-499/
 │
 └── CSE499B/
     ├── README.md
+    ├── main.py
+    ├── requirements.txt
     │
     ├── Final project/
     │   ├── Baseline Stable Diffusion 2/
@@ -61,7 +63,9 @@ CSE-499/
     │
     ├── other/
     └── support/
-             ├── Weekly Updates/
+    │       ├── Weekly Updates/
+    │
+    ├── data/
 ```
 ## Repository Commit History Note
 During final project cleanup, I faced a GitHub push issue because some deployment bundle files exceeded GitHub’s file-size limit. To fix the repository and upload the final project properly, I had to reinitialize the repository and force push the cleaned version.

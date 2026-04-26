@@ -289,6 +289,8 @@ https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
 ```text
 CSE499B/
 ├── README.md
+├── main.py
+├── requirements.txt
 │
 ├── Final project/
 │   ├── Baseline Stable Diffusion 2/
@@ -342,6 +344,9 @@ CSE499B/
 │
 ├── other/
 └── support/
+│       ├── Weekly Updates/
+│
+├── data/
 ```
 
 ▶️ How to Run the Project
