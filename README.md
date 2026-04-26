@@ -1,5 +1,5 @@
 
-## 📁 Repository Structure
+📁 Repository Structure
 
 This repository contains an 8-month Senior Design project divided into two major phases:
 
@@ -21,22 +21,39 @@ CSE-499/
 │
 └── CSE499B/
     ├── README.md
+    │
     ├── Final project/
-    │   ├── Student A/
+    │   ├── Baseline Stable Diffusion 2/
+    │   │   ├── baseline-recreating-for-align-...
+    │   │   └── stable-diffusion-v2-celeba-...
+    │   │
+    │   ├── Main/
+    │   │   ├── STUDENT A 01 without Guidance/
+    │   │   ├── STUDENT A02 Guided 100 steps eval/
+    │   │   └── STUDENT A02 SD2 Guided 50 steps/
+    │   │
     │   ├── STUDENT B/
+    │   │   ├── other/
+    │   │   └── studentb(complete).ipynb
+    │   │
     │   ├── STUDENT C/
+    │   │   ├── student-c version_1(bad).ipynb
+    │   │   ├── student-c-v2(bad).ipynb
+    │   │   └── student-c-v3(bad).ipynb
+    │   │
     │   └── cse499b_inpainting_deploy/
     │       ├── README.md
     │       ├── app.py
     │       ├── requirements.txt
+    │       ├── .gitignore
+    │       ├── .gradio/
     │       ├── assets/
     │       ├── models/
-    │       └── notebooks/
+    │       ├── notebooks/
+    │       └── outputs/
     │
-    ├── support/
-    │   └── Weekly Updates/
-    │
-    └── other/
+    ├── other/
+    └── support/
 ```
 ## Repository Commit History Note
 During final project cleanup, I faced a GitHub push issue because some deployment bundle files exceeded GitHub’s file-size limit. To fix the repository and upload the final project properly, I had to reinitialize the repository and force push the cleaned version.
