@@ -1,13 +1,44 @@
 ## Project Duration
 
-This is an **8-month Senior Design project** divided into two phases:
+## 📁 Repository Structure
 
-- **CSE 499A** – the **first 4 months** of the project  
-- **CSE 499B** – the **last 4 months** of the project  
+This repository contains an 8-month Senior Design project divided into two major phases:
 
-Each phase contains its own progress, experiments, and implementation details.  
-Detailed information for both phases is provided in the **README.md** under their respective subsections.
-
+```text
+CSE-499/
+│
+├── README.md
+│
+├── CSE 499A/
+│   ├── README.md
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── Others/
+│   ├── da_ta/
+│   └── support/
+│       ├── Weekly Updates/
+│       ├── Final project Files/
+│       └── misc/
+│
+└── CSE499B/
+    ├── README.md
+    ├── Final project/
+    │   ├── Student A/
+    │   ├── STUDENT B/
+    │   ├── STUDENT C/
+    │   └── cse499b_inpainting_deploy/
+    │       ├── README.md
+    │       ├── app.py
+    │       ├── requirements.txt
+    │       ├── assets/
+    │       ├── models/
+    │       └── notebooks/
+    │
+    ├── support/
+    │   └── Weekly Updates/
+    │
+    └── other/
+```
 ## Repository Commit History Note
 During final project cleanup, I faced a GitHub push issue because some deployment bundle files exceeded GitHub’s file-size limit. To fix the repository and upload the final project properly, I had to reinitialize the repository and force push the cleaned version.
 
