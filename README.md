@@ -1,4 +1,3 @@
-## Project Duration
 
 ## 📁 Repository Structure
 
