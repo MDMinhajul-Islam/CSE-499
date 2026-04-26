@@ -61,5 +61,6 @@ During final project cleanup, I faced a GitHub push issue because some deploymen
 
 Because of this, the previous commit history was replaced. However, I have preserved the project evidence through the weekly update folders, notebooks, reports, experiment results, deployment files, and documentation inside the repository.
 
+```text
 Sincerely,
 Md. Minhajul Islam
