@@ -28,6 +28,8 @@ CSE-499/
 │
 └── CSE499B/
     ├── README.md
+    ├── main.py
+    ├── requirements.txt
     │
     ├── Final project/
     │   ├── Baseline Stable Diffusion 2/
