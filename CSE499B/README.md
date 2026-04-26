@@ -344,6 +344,9 @@ CSE499B/
 │
 ├── other/
 └── support/
+│       ├── Weekly Updates/
+│
+├── data/
 ```
 
 ▶️ How to Run the Project
