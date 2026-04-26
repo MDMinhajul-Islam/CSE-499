@@ -287,27 +287,61 @@ https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
 ```
 📁 Project Structure
 ```text
-.
-├── models/
-│   ├── model_registry.py
-│   ├── student_infer.py
-│   ├── sd2_infer.py
-│   └── utils.py
+CSE499B/
+├── README.md
 │
-├── checkpoints/
-│   └── student/
-│       └── studentA02_best.pt
+├── Final project/
+│   ├── Baseline Stable Diffusion 2/
+│   │   ├── baseline-recreating-for-align-with-a02...
+│   │   └── stable-diffusion-v-2-celeba-jessica...
+│   │
+│   ├── Main/
+│   │   ├── STUDENT A 01 without Guidance/
+│   │   │   └── 01-varienta-latent-inpainting-base...
+│   │   │
+│   │   ├── STUDENT A02 Guided 100 steps eval/
+│   │   │   ├── other/
+│   │   │   └── student-a02-with-teacher-sd2-dist...
+│   │   │
+│   │   └── STUDENT A02 SD2 Guided 50 steps/
+│   │       ├── others/
+│   │       └── student-a02-with-teacher-sd2-dist...
+│   │
+│   ├── STUDENT B/
+│   │   ├── other/
+│   │   └── studentb(complete).ipynb
+│   │
+│   ├── STUDENT C/
+│   │   ├── student-c version_1(bad).ipynb
+│   │   ├── student-c-v2(bad).ipynb
+│   │   └── student-c-v3 (bad).ipynb
+│   │
+│   └── cse499b_inpainting_deploy/
+│       ├── .gradio/
+│       ├── assets/
+│       ├── models/
+│       │   ├── __init__.py
+│       │   ├── model_registry.py
+│       │   ├── sd2_infer.py
+│       │   ├── student_infer.py
+│       │   └── utils.py
+│       │
+│       ├── notebooks/
+│       │   ├── baseline-recreating-for-align-with...
+│       │   └── student-a02-with-teacher-sd2-dist...
+│       │
+│       ├── outputs/
+│       │   ├── compare_20260422_005040.png
+│       │   ├── compare_20260422_013032.png
+│       │   └── compare_20260422_020221.png
+│       │
+│       ├── .gitignore
+│       ├── README.md
+│       ├── app.py
+│       └── requirements.txt
 │
-├── assets/
-│   ├── banner.png
-│   ├── system_diagram.png
-│   ├── demo.gif
-│   └── results_grid.png
-│
-├── outputs/
-├── app.py
-├── requirements.txt
-└── README.md
+├── other/
+└── support/
 ```
 
 ▶️ How to Run the Project
