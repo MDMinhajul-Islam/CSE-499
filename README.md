@@ -4,9 +4,10 @@ This repository contains an 8-month Senior Design project divided into two major
 CSE 499A – the first 4 months of the project
 CSE 499B – the last 4 months of the project 
 
-Each phase contains its own progress, experiments, and implementation details. Detailed information for both phases is provided  under the respective subsections.
+Each phase contains its own progress, experiments, and implementation details.
+Detailed information for both phases is provided  under the respective subsections.
 
-Each cse499A and cse499B have their  individual  files and README.md.Here I am giving the Structure 
+Each cse499A and cse499B have their  individual  files and README.md. 
 ```
 📁 Repository Structure
 ```text
